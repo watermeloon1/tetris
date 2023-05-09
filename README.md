@@ -1,5 +1,17 @@
 
-![Project Logo](logo.png)
+<div class="text-center">
+  <img src="logo.png">
+</div>
+
+<style>
+  .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+</style>
+
 
 # Tetris Game
 
