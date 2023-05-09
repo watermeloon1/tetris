@@ -29,11 +29,11 @@ public class Title extends JPanel implements MouseListener, MouseMotionListener 
 
     public Title(Window window) {
 
-        background = loadImage("/background.png");
-        play = loadImage("/play.png");
-        settings = loadImage("/settings.png");
-        help = loadImage("/help.png");
-        exit = loadImage("/exit.png");
+        background = loadImage("../textures/background.png");
+        play = loadImage("../textures/play.png");
+        settings = loadImage("../textures/settings.png");
+        help = loadImage("../textures/help.png");
+        exit = loadImage("../textures/exit.png");
 
         Timer timer = new Timer(1000 / 60, e -> repaint());
         timer.start();

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import javax.swing.*;
 import javax.imageio.ImageIO;
-
+import java.io.File;
 
 public class Settings extends JPanel implements MouseListener, MouseMotionListener {
 
@@ -31,7 +31,8 @@ public class Settings extends JPanel implements MouseListener, MouseMotionListen
 
     public static BufferedImage loadImage(String path) {
         try {
-            return ImageIO.read(Board.class.getResource(path));
+            File file = new File(path);
+            return ImageIO.read(file);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -45,13 +46,12 @@ public class Settings extends JPanel implements MouseListener, MouseMotionListen
         mouseX = 0;
         mouseY = 0;
 
-        background = loadImage("/background.png");
-        back = loadImage("/back.png");
-        grid = loadImage("/grid.png");
-        easy = loadImage("/easy.png");
-        normal = loadImage("/normal.png");
-        hard = loadImage("/hard.png");
-
+        background = loadImage("../textures/background.png");
+        back = loadImage("../textures/back.png");
+        grid = loadImage("../textures/grid.png");
+        easy = loadImage("../textures/easy.png");
+        normal = loadImage("../textures/normal.png");
+        hard = loadImage("../textures/hard.png");
 
         //Slicing
         assert back != null;

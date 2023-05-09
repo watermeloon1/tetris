@@ -13,7 +13,7 @@ public class SettingsTest {
 
     @Before
     public void setUp(){
-        path = "/background.png";
+        path = "../textures/background.png";
     }
 
     @Test
