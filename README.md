@@ -1,6 +1,3 @@
-
-![Project logo](logo.png)
-
 # Tetris Game
 
 This is a simple Tetris game written in Java as a school project. The game features the classic Tetris gameplay, where the player must arrange falling blocks to form complete rows and clear them from the screen.
